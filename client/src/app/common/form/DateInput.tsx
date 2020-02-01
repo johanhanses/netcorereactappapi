@@ -17,8 +17,8 @@ const DateInput: React.FC<IProps> = ({
 }) => {
     return (
         <Form.Field error={touched && !!error} width={width}>
-            >
             <DateTimePicker
+                className="fix-position-moz-DateTimePicker"
                 placeholder={placeholder}
                 value={input.value || null}
                 onChange={input.onChange}
